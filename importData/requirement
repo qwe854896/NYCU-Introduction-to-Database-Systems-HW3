@@ -1,0 +1,6 @@
+psycopg2-binary
+line-bot-sdk
+pandas
+bs4
+lxml
+sqlalchemy
