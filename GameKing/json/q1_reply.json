@@ -1,0 +1,262 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "{{Images|default('https://upload.wikimedia.org/wikipedia/commons/7/7d/Wallpaper-white-21.jpg', true)}}",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "{{Name|default('@', true)}}",
+        "weight": "bold",
+        "size": "xl"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "margin": "md",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [],
+                "height": "15px",
+                "backgroundColor": "#0D8186",
+                "width": "{{Critic_Score|default('0', true)}}%"
+              }
+            ],
+            "backgroundColor": "#9FD8E36E",
+            "width": "80%",
+            "height": "15px"
+          },
+          {
+            "type": "text",
+            "text": "{{Critic_Score|default('@', true)}}",
+            "size": "sm",
+            "color": "#999999",
+            "margin": "md",
+            "flex": 0
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "critic score"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "margin": "md",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [],
+                "height": "15px",
+                "backgroundColor": "#0D8186",
+                "width": "{{(User_Score|default('0', true))*10}}%"
+              }
+            ],
+            "backgroundColor": "#9FD8E36E",
+            "width": "80%",
+            "height": "15px"
+          },
+          {
+            "type": "text",
+            "text": "{{User_Score|default('@', true)}}",
+            "size": "sm",
+            "color": "#999999",
+            "margin": "md",
+            "flex": 0
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "user score"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "lg",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Year of release",
+                "color": "#000000",
+                "size": "md",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "{{Year_of_Release|default('@', true)}}",
+                "wrap": true,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Genre",
+                "color": "#000000",
+                "size": "md",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "{{Genre|default('@', true)}}",
+                "wrap": true,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Rating",
+                "color": "#000000",
+                "size": "md",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "{{Rating|default('@', true)}}",
+                "wrap": true,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Platform",
+                "color": "#000000",
+                "size": "md",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "{{Platform|default('@', true)}}",
+                "wrap": true,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Publisher",
+                "color": "#000000",
+                "size": "md",
+                "flex": 5
+              },
+              {
+                "type": "text",
+                "text": "{{Publisher|default('@', true)}}",
+                "wrap": true,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [],
+            "backgroundColor": "#000000",
+            "height": "1px"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Recommened",
+        "align": "center",
+        "offsetBottom": "5px"
+      },
+      {
+        "type": "button",
+        "style": "secondary",
+        "height": "sm",
+        "action": {
+          "type": "message",
+          "label": "{{Name1[:40]|default('@', true)}}",
+          "text": "q1 {{Name1|default('@', true)}}"
+        }
+      },
+      {
+        "type": "button",
+        "style": "secondary",
+        "height": "sm",
+        "action": {
+          "type": "message",
+          "label": "{{Name2[:40]|default('@', true)}}",
+          "text": "q1 {{Name2|default('@', true)}}"
+        }
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "label": "{{Name3[:40]|default('@', true)}}",
+          "text": "q1 {{Name3|default('@', true)}}"
+        },
+        "style": "secondary"
+      }
+    ],
+    "flex": 0
+  }
+}

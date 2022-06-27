@@ -1,0 +1,65 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "DEMO",
+        "size": "3xl"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "postback",
+          "label": "default richmenu",
+          "data": "action=richmenu-default"
+        }
+      },
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "uri",
+          "label": "uri",
+          "uri": "https://youtu.be/dQw4w9WgXcQ"
+        }
+      },
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "message",
+          "label": "咩噗",
+          "text": "QAQ..."
+        }
+      },
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "datetimepicker",
+          "label": "Pick a time",
+          "data": "hello",
+          "mode": "date",
+          "max": "2022-12-31",
+          "min": "2022-01-01"
+        }
+      }
+    ],
+    "flex": 0
+  }
+}
