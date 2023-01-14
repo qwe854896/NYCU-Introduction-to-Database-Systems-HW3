@@ -2,6 +2,7 @@
 A linebot called GameKing to query new game.
 With automatic tools to create table and import data
 
-## Requirements
-Well... actually I don't know.
-I use Python 3.8.
+## How to deploy?
+
+- The source code can be directly deployed on **AWS** using its **lambda** service.
+- Or you can try to run your http server using Python flask.
